@@ -16,11 +16,10 @@
 		/>
 		<style>
 			body {
-				background: url(images/bg-img.png) no-repeat ;
+				background: url(images/bg-img.png) no-repeat;
 				background-size: cover;
 				height: 100vh;
 			}
-            
 		</style>
 	</head>
 
@@ -28,13 +27,33 @@
 		<div class="container">
 			<form class="col-md-6 m-auto py-5">
 				<div class="input-group mb-3">
-					<input id="search-field" type="text" class="form-control" placeholder="Enter a location for Weather ..."/>
+					<input
+						id="search-field"
+						type="text"
+						class="form-control"
+						placeholder="Enter a location for Weather ..."
+					/>
 					<div class="input-group-append">
-						<button onclick="didar()" type="button" class="btn btn-danger">Search</button>
+						<button onclick="didar()" type="button" class="btn btn-danger">
+							Search
+						</button>
 					</div>
 				</div>
 			</form>
-			<div id="display-data" class="weather-status text-white text-center"></div>
+
+			<!-- spinner section-->
+			<div class="d-flex justify-content-center">
+				<div class="spinner-grow text-danger" role="status">
+				<span class="visually-hidden"></span>
+			</div>
+			<!-- end spinner section  -->
+
+			</div>
+			
+			<div
+				id="display-data"
+				class="weather-status text-white text-center"
+			></div>
 		</div>
 		<script src="app.js"></script>
 	</body>
